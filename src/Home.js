@@ -24,14 +24,36 @@ export default function Home() {
     var landing_text = document.querySelectorAll(".text h3");
     var text = document.querySelectorAll(".text");
     var logo = document.querySelector(".logo div");
+    var clipImage = document.querySelectorAll(".imgg");
     var pagePositionNav = document.querySelectorAll(".page-position-nav");
     var pagePositionNavDiv = document.querySelectorAll(
       ".page-position-nav > div "
     );
     var pointer = document.querySelector(".custom-pointer");
     var start, end;
+
+    container.addEventListener("mousemove", () => {
+      pagePositionNav.forEach((element) => {
+        element.addEventListener("mouseover", () => {
+          clipImage.forEach((ele) => {
+            ele.style.clipPath = "circle(2% at var(--x) var(--y))";
+            document.querySelector(".body").style.cursor = "pointer";
+          });
+        });
+        element.addEventListener("mouseleave", () => {
+          clipImage.forEach((ele) => {
+            ele.style.clipPath = "circle(8% at var(--x) var(--y))";
+            document.querySelector(".body").style.cursor = "none";
+          });
+        });
+      });
+    });
+
+    pagePositionNavDiv[0].style.border = "5px solid grey";
+    pagePositionNavDiv[0].style.borderRadius = "50%";
     container.addEventListener("scroll", () => {
-      if (page1.getBoundingClientRect().bottom == window.innerHeight) {
+      console.log(page1.getBoundingClientRect().top);
+      if (page1.getBoundingClientRect().top > 0) {
         pagePositionNavDiv[0].style.border = "5px solid grey";
         pagePositionNavDiv[0].style.borderRadius = "50%";
       }
@@ -41,6 +63,9 @@ export default function Home() {
       ) {
         pagePositionNavDiv[1].style.border = "5px solid grey";
         pagePositionNavDiv[1].style.borderRadius = "50%";
+        pagePositionNavDiv[0].style.border = "";
+        pagePositionNavDiv[0].style.borderRadius = "";
+
       } else {
         pagePositionNavDiv[1].style.border = "";
         pagePositionNavDiv[1].style.borderRadius = "";
@@ -106,7 +131,6 @@ export default function Home() {
         pagePositionNavDiv[7].style.borderRadius = "";
       }
     });
-
     page1.addEventListener("mousedown", () => {
       start = new Date();
     });
@@ -115,7 +139,7 @@ export default function Home() {
       end = new Date();
       timer = end - start;
       if (timer > 300) {
-        History.push("/services");
+        History.push("/about");
       }
     });
     page2.addEventListener("mousedown", () => {
@@ -290,7 +314,7 @@ export default function Home() {
         </div>
         <div className="container">
           <div className="page1">
-            <div className="image">
+            <div className="image imgg">
               <div className="img"></div>
             </div>
             <div className="page1-content">
@@ -316,7 +340,7 @@ export default function Home() {
             </div>
           </div>
           <div className="page2">
-            <div className="image1">
+            <div className="image1 imgg">
               <div className="img"></div>
             </div>
             {/* <Blob name="2" /> */}
@@ -337,7 +361,7 @@ export default function Home() {
             <Nav />
           </div>
           <div className="page4">
-            <div className="image3">
+            <div className="image3 imgg">
               <div className="img"></div>
             </div>
             {/* <Blob name="4" /> */}
@@ -348,7 +372,7 @@ export default function Home() {
             <Nav />
           </div>
           <div className="page5">
-            <div className="image4">
+            <div className="image4 imgg">
               <div className="img"></div>
             </div>
             {/* <Blob name="5" /> */}
@@ -359,7 +383,7 @@ export default function Home() {
             <Nav />
           </div>
           <div className="page4 page6">
-            <div className="image5">
+            <div className="image5 imgg">
               <div className="img"></div>
             </div>
             {/* <Blob name="6" /> */}
@@ -370,7 +394,7 @@ export default function Home() {
             <Nav />
           </div>
           <div className="page4 page7">
-            <div className="image6">
+            <div className="image6 imgg">
               <div className="img"></div>
             </div>
             {/* <Blob name="7" /> */}

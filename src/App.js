@@ -20,7 +20,7 @@ import Client from "./Client";
 import Contact from "./Contact";
 import Portfolio from "./Portfolio";
 import Try from "./Try";
-import About from "./about";
+import About from "./About";
 export default function App() {
   return (
     <>

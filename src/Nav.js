@@ -1,6 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 export default function Nav() {
+  useEffect(() => {
+    var pagePositionNav = document.querySelector(".page-position-nav");
+    var pagePositionNavDiv = document.querySelectorAll(
+      ".page-position-nav > div "
+    );
+    pagePositionNav.addEventListener("mouseenter", () => {
+      console.log("hello");
+    });
+  });
+
   return (
     <div>
       <div className="page-position-nav">
@@ -11,6 +21,13 @@ export default function Nav() {
             </div>
           </Link>
         </div> */}
+        <div>
+          <Link to="/about">
+            <div className="positional">
+              <p>about</p>
+            </div>
+          </Link>
+        </div>
         <div>
           <Link to="/service">
             <div className="positional">
@@ -53,13 +70,7 @@ export default function Nav() {
             </div>
           </Link>
         </div>
-        <div>
-          <Link to="/career">
-            <div className="positional">
-              <p>career</p>
-            </div>
-          </Link>
-        </div>
+        <div></div>
       </div>
     </div>
   );

@@ -93,7 +93,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  /* transition: clip-path 0.2s linear; */
+  transition: clip-path 0.2s linear;
 }
 .image1 {
   width: 100%;
@@ -120,7 +120,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  /* transition: clip-path 0.2s linear; */
+  transition: clip-path 0.2s linear;
 }
 
 .image3 {
@@ -558,6 +558,37 @@ body {
 
 .client-landing-clientsInfo > div:nth-of-type(2n + 1) .client-image {
   order: 1;
+}
+
+/* about  */
+
+.about{
+  height: 100vh;
+  background: black;
+  color: white;
+}
+
+
+.about h1{
+  height: 10vh;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 5rem 0;
+}
+
+.about-content{
+  height: 60vh;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.about-content i{
+  align-self: flex-start;
 }
 
 /* service  */
