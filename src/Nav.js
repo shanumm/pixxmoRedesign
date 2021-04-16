@@ -38,35 +38,35 @@ export default function Nav() {
         <div>
           <Link to="/client">
             <div className="positional">
-              <p>client</p>
+              <p>portfolio</p>
             </div>
           </Link>
         </div>
         <div>
           <Link to="/portfolio">
             <div className="positional">
-              <p>portfolio</p>
+              <p>team</p>
             </div>
           </Link>
         </div>
         <div>
           <Link to="/team">
             <div className="positional">
-              <p>team</p>
+              <p>client</p>
             </div>
           </Link>
         </div>
         <div>
           <Link to="/contact">
             <div className="positional">
-              <p>contact</p>
+              <p>career</p>
             </div>
           </Link>
         </div>
         <div>
           <Link to="/career">
             <div className="positional">
-              <p>career</p>
+              <p>contact</p>
             </div>
           </Link>
         </div>

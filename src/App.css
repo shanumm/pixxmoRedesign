@@ -249,7 +249,14 @@ body {
 .page4:active .text h3,
 .page5:active .text h3,
 .page6:active .text h3,
-.page7:active .text h3 {
+.page7:active .text h3,
+.page1:active .heading p,
+.page2:active .text p,
+.page3:active .text p,
+.page4:active .text p,
+.page5:active .text p,
+.page6:active .text p,
+.page7:active .text p {
   color: white;
   transition: color 0.5s linear;
   font-weight: 600;
@@ -311,6 +318,21 @@ body {
 .page5 h3 {
   font-weight: 200;
   font-size: 3rem !important;
+}
+
+.page1-content .heading p,
+.page2 p,
+.page3 p,
+.page4 p,
+.page5 p,
+.page6 p,
+.page7 p {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 600;
 }
 
 .heading div h3 {
@@ -445,7 +467,8 @@ body {
   border-radius: 5px;
   color: white;
   padding: 0.4rem;
-  margin-right: 6rem;
+  margin-left: -3.5em;
+  margin-top: -0.5em;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
 }
@@ -562,14 +585,13 @@ body {
 
 /* about  */
 
-.about{
+.about {
   height: 100vh;
   background: black;
   color: white;
 }
 
-
-.about h1{
+.about h1 {
   height: 10vh;
   width: 90%;
   display: flex;
@@ -578,7 +600,7 @@ body {
   padding: 5rem 0;
 }
 
-.about-content{
+.about-content {
   height: 60vh;
   width: 80%;
   margin: auto;
@@ -587,7 +609,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-.about-content i{
+.about-content i {
   align-self: flex-start;
 }
 
