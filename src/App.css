@@ -749,18 +749,60 @@ body {
   margin-right: 2rem;
   height: 75%;
   font-size: 4rem;
-  width: 45%;
+  width: 50%;
 }
 .contact-text2 {
-  height: 40vh;
+  height: auto;
   width: 60%;
   display: flex;
   align-items: center;
   font-size: 2.4rem;
+  animation: contact2 1s linear forwards;
+  animation-delay: 500ms;
+  opacity: 0;
 }
-.contact-text2 h2 {
-  margin-left: 8rem;
+@keyframes contact2 {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(-50%);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
 }
+.contact-text2 form {
+  margin-top: -5%;
+  padding: 2em;
+}
+
+.contact-text2 form input,
+.contact-text2 form textarea {
+  width: 25vw;
+  padding: 1rem;
+  border-radius: 0.5em;
+  margin-top: 2em;
+}
+.contact-text2 form textarea {
+  height: 20vh;
+}
+.contact-text2 form input:focus,
+.contact-text2 form textarea:focus,
+.contact-text2 button:focus {
+  outline: none;
+  border: 0.2em solid grey;
+}
+.contact-text2 button {
+  padding: 1em;
+  margin-left: 36.6%;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+
 .contact-text3 {
   min-height: 50vh;
   width: 80%;
@@ -770,11 +812,11 @@ body {
 }
 .contact-text3-info {
   font-size: 1.1rem;
-  margin-top: 1.6rem;
+  margin-top: 10rem;
 }
 .contact-text3-phone {
   font-size: 2.2rem;
-  margin-top: 1.6rem;
+  margin-top: 5rem;
   margin-right: 1.2rem;
 }
 

@@ -6,6 +6,7 @@ import anime from "animejs";
 import { AnimatePresence, motion } from "framer-motion";
 
 import "./App.css";
+import FormSub from "./Form";
 
 export default function Contact() {
   useEffect(() => {
@@ -15,7 +16,6 @@ export default function Contact() {
       delay: 1000,
     });
   });
-
   return (
     <motion.div
       className="contact-content"
@@ -30,9 +30,7 @@ export default function Contact() {
         <div className="contact-text1">
           <h1>Calls to action need to be direct!</h1>
         </div>
-        <div className="contact-text2">
-          <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. .</h2>
-        </div>
+        <FormSub />
         <div className="contact-text3">
           <div className="contact-text3-info">
             <h3>Lorem ipsum dolor sit amet.</h3>
