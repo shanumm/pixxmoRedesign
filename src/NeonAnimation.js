@@ -36,7 +36,7 @@ export default function NeonAnimation() {
       dieY = h / 2 / opts.len,
       baseRad = (Math.PI * 2) / 6;
 
-    ctx.fillStyle = "black";
+    ctx.fillStyle = "blue";
     ctx.fillRect(0, 0, w, h);
 
     function loop() {
@@ -141,7 +141,7 @@ export default function NeonAnimation() {
     window.addEventListener("resize", function () {
       w = c.width = window.innerWidth;
       h = c.height = window.innerHeight;
-      ctx.fillStyle = "black";
+      ctx.fillStyle = "blue";
       ctx.fillRect(0, 0, w, h);
 
       opts.cx = w / 2;

@@ -618,6 +618,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  z-index: 99999;
 }
 .about-content i {
   align-self: flex-start;
@@ -859,12 +860,13 @@ body {
 }
 .team-about-upper {
   height: 86vh;
-  width: 100%;
+  width: 75%;
   font-size: 1.4rem;
   color: white;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  text-align: justify;
 }
 .team-about-upper p {
   width: 55%;
@@ -878,7 +880,6 @@ body {
   /* grid-template-columns: 1fr 1fr 1fr; */
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 4rem;
-  background-color: #5f91ff;
   margin-bottom: 17.9em;
 }
 
@@ -904,10 +905,12 @@ body {
 .team-about10,
 .team-about11,
 .team-about12 {
+  margin-top: 5em;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
+  background-color: #000000;
 }
 .team-about1-image img,
 .team-about2-image img,
@@ -1823,3 +1826,45 @@ body {
   font-weight: 900;
   font-size: 60px;
 } */
+
+.founders {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 4rem;
+  background-color: black;
+  margin-bottom: 17.9em;
+  margin-top: -30em;
+}
+
+.founders .team-about1-image img {
+  width: 20%;
+  height: 20%;
+  margin-left: 10em;
+}
+.founders .team-about2 {
+  margin-left: -20em;
+}
+.founders .team-about2-image img {
+  width: 22%;
+  height: 22%;
+  margin-left: 10em;
+}
+.founders .team-about1-text {
+  margin-left: -35em;
+}
+.founders .team-about2-text {
+  margin-left: -27em;
+}
+
+.founders .team-about1-text h1,
+.founders .team-about1-text h2,
+.founders .team-about1-text p,
+.founders .team-about2-text h1,
+.founders .team-about2-text h2,
+.founders .team-about2-text p {
+  padding: 1em;
+  width: fit-content;
+}

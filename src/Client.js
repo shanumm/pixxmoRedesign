@@ -6,6 +6,7 @@ import ScrollReveal from "scrollreveal";
 
 import { AnimatePresence, motion } from "framer-motion";
 import "./App.css";
+import Hole from "./Hole";
 
 export default function Client() {
   useEffect(() => {
@@ -28,7 +29,7 @@ export default function Client() {
       <div className="client-landing">
         <div className="client-landing-content">
           <h1>Our Clients</h1>
-          <i style={{marginLeft:"2rem",fontWeight:"200"}}>
+          <i style={{ marginLeft: "2rem", fontWeight: "200" }}>
             Coming together is beginning, keeping together is progress, working
             together is a success!
           </i>
@@ -96,6 +97,7 @@ export default function Client() {
           </div>
         </div>
       </div>
+      <Hole />
       <Footer />
     </motion.div>
   );

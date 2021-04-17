@@ -192,7 +192,6 @@ export default function Service() {
         </div>
       </div>
       <FallAnimation />
-      <NeonAnimation />
       <Footer />
     </motion.div>
   );

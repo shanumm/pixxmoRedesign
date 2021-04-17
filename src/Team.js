@@ -8,6 +8,7 @@ import Teamimage from "./teamimage.webp";
 import { AnimatePresence, motion } from "framer-motion";
 
 import "./App.css";
+import NeonAnimation from "./NeonAnimation";
 
 export default function Team() {
   useEffect(() => {
@@ -172,6 +173,7 @@ export default function Team() {
         </div>
       </div>
       <Footer />
+      <NeonAnimation />
     </motion.div>
   );
 }
