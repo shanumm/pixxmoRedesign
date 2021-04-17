@@ -29,7 +29,7 @@ export default function Nav() {
           </Link>
         </div>
         <div>
-          <Link to="/service">
+          <Link to="/services">
             <div className="positional">
               <p>service</p>
             </div>
@@ -50,14 +50,14 @@ export default function Nav() {
           </Link>
         </div>
         <div>
-          <Link to="/client">
+          <Link to="/clients">
             <div className="positional">
               <p>client</p>
             </div>
           </Link>
         </div>
         <div>
-          <Link to="/career">
+          <Link to="/careers">
             <div className="positional">
               <p>career</p>
             </div>

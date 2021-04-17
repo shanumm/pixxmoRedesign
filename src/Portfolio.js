@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Cross from "./Cross";
 import { Link } from "react-router-dom";
+import PixxmoW from "./TBGW_port.png";
 import inView from "in-view";
 import W1 from "./portfolio/w1.jpg";
 import W2 from "./portfolio/w2.jpg";
@@ -17,6 +18,7 @@ import Pure from "./portfolio/w12.png";
 import { AnimatePresence, motion } from "framer-motion";
 
 import "./App.css";
+import RainAnimation from "./RainAnimation";
 
 export default function Portfolio() {
   useEffect(() => {
@@ -100,7 +102,7 @@ export default function Portfolio() {
       <div className="portfolio-container">
         <div className="portfolio-page1">
           <div className="p-p1-header">
-            <h4>pixXmo</h4>
+            <img src={PixxmoW} />
           </div>
           <div className="p-p1-content">
             <div className="p-p1-content-left">
@@ -113,14 +115,14 @@ export default function Portfolio() {
             </div>
             <div className="p-p1-content-right">
               <div className="p-p1-content-right-img">
-                <img src={Indo} />
+                <img src={W1} />
               </div>
             </div>
           </div>
         </div>
         <div className="portfolio-page2">
           <div className="p-p1-header">
-            <h4>pixXmo</h4>
+            <img src={PixxmoW} />
           </div>
           <div className="p-p1-content">
             <div className="p-p1-content-left">
@@ -133,14 +135,14 @@ export default function Portfolio() {
             </div>
             <div className="p-p1-content-right">
               <div className="p-p1-content-right-img">
-                <img src={Indo} />
+                <img src={W2} />
               </div>
             </div>
           </div>
         </div>
         <div className="portfolio-page3">
           <div className="p-p1-header">
-            <h4>pixXmo</h4>
+            <img src={PixxmoW} />
           </div>
           <div className="p-p1-content">
             <div className="p-p1-content-left">
@@ -153,14 +155,14 @@ export default function Portfolio() {
             </div>
             <div className="p-p1-content-right">
               <div className="p-p1-content-right-img">
-                <img src={Indo} />
+                <img src={W3} />
               </div>
             </div>
           </div>
         </div>
         <div className="portfolio-page4">
           <div className="p-p1-header">
-            <h4>pixXmo</h4>
+            <img src={PixxmoW} />
           </div>
           <div className="p-p1-content">
             <div className="p-p1-content-left">
@@ -173,14 +175,14 @@ export default function Portfolio() {
             </div>
             <div className="p-p1-content-right">
               <div className="p-p1-content-right-img">
-                <img src={Indo} />
+                <img src={W4} />
               </div>
             </div>
           </div>
         </div>
         <div className="portfolio-page5">
           <div className="p-p1-header">
-            <h4>pixXmo</h4>
+            <img src={PixxmoW} />
           </div>
           <div className="p-p1-content">
             <div className="p-p1-content-left">
@@ -193,14 +195,14 @@ export default function Portfolio() {
             </div>
             <div className="p-p1-content-right">
               <div className="p-p1-content-right-img">
-                <img src={Indo} />
+                <img src={W5} />
               </div>
             </div>
           </div>
         </div>
         <div className="portfolio-page6">
           <div className="p-p1-header">
-            <h4>pixXmo</h4>
+            <img src={PixxmoW} />
           </div>
           <div className="p-p1-content">
             <div className="p-p1-content-left">
@@ -220,7 +222,7 @@ export default function Portfolio() {
         </div>
         <div className="portfolio-page7">
           <div className="p-p1-header">
-            <h4>pixXmo</h4>
+            <img src={PixxmoW} />
           </div>
           <div className="p-p1-content">
             <div className="p-p1-content-left">
@@ -233,14 +235,14 @@ export default function Portfolio() {
             </div>
             <div className="p-p1-content-right">
               <div className="p-p1-content-right-img">
-                <img src={Indo} />
+                <img src={Pure} />
               </div>
             </div>
           </div>
         </div>
         <div className="portfolio-page8">
           <div className="p-p1-header">
-            <h4>pixXmo</h4>
+            <img src={PixxmoW} />
           </div>
           <div className="p-p1-content">
             <div className="p-p1-content-left">
@@ -253,14 +255,14 @@ export default function Portfolio() {
             </div>
             <div className="p-p1-content-right">
               <div className="p-p1-content-right-img">
-                <img src={Indo} />
+                <img src={W6} />
               </div>
             </div>
           </div>
         </div>
         <div className="portfolio-page9">
           <div className="p-p1-header">
-            <h4>pixXmo</h4>
+            <img src={PixxmoW} />
           </div>
           <div className="p-p1-content">
             <div className="p-p1-content-left">
@@ -273,14 +275,14 @@ export default function Portfolio() {
             </div>
             <div className="p-p1-content-right">
               <div className="p-p1-content-right-img">
-                <img src={Indo} />
+                <img src={W7} />
               </div>
             </div>
           </div>
         </div>
         <div className="portfolio-page10">
           <div className="p-p1-header">
-            <h4>pixXmo</h4>
+            <img src={PixxmoW} />
           </div>
           <div className="p-p1-content">
             <div className="p-p1-content-left">
@@ -293,14 +295,14 @@ export default function Portfolio() {
             </div>
             <div className="p-p1-content-right">
               <div className="p-p1-content-right-img">
-                <img src={Indo} />
+                <img src={W8} />
               </div>
             </div>
           </div>
         </div>
         <div className="portfolio-page11">
           <div className="p-p1-header">
-            <h4>pixXmo</h4>
+            <img src={PixxmoW} />
           </div>
           <div className="p-p1-content">
             <div className="p-p1-content-left">
@@ -313,14 +315,14 @@ export default function Portfolio() {
             </div>
             <div className="p-p1-content-right">
               <div className="p-p1-content-right-img">
-                <img src={Indo} />
+                <img src={W9} />
               </div>
             </div>
           </div>
         </div>
         <div className="portfolio-page12">
           <div className="p-p1-header">
-            <h4>pixXmo</h4>
+            <img src={PixxmoW} />
           </div>
           <div className="p-p1-content">
             <div className="p-p1-content-left">
@@ -333,12 +335,13 @@ export default function Portfolio() {
             </div>
             <div className="p-p1-content-right">
               <div className="p-p1-content-right-img">
-                <img src={Indo} />
+                <img src={W10} />
               </div>
             </div>
           </div>
         </div>
       </div>
+      <RainAnimation />
     </motion.div>
   );
 }

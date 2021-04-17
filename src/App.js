@@ -28,13 +28,13 @@ export default function App() {
         <AnimatePresence>
           <Switch>
             <Route path="/" exact component={Home} />
-            <Route path="/about" component={About} />
-            <Route path="/services" component={Service} />
+            <Route path="/about" exact component={About} />
+            <Route path="/services" exact component={Service} />
             <Route path="/clients" exact component={Client} />
             <Route path="/careers" exact component={Career} />
-            <Route path="/portfolio" component={Portfolio} />
-            <Route path="/contact" component={Contact} />
-            <Route path="/team" component={Team} />
+            <Route path="/portfolio" exact component={Portfolio} />
+            <Route path="/contact" exact component={Contact} />
+            <Route path="/team" exact component={Team} />
             {/* <Try /> */}
             <Redirect to="/"></Redirect>
           </Switch>

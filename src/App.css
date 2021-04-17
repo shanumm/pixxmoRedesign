@@ -94,6 +94,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   transition: clip-path 0.2s linear;
+  z-index: 0;
 }
 .image1 {
   width: 100%;
@@ -318,6 +319,11 @@ body {
 .page5 h3 {
   font-weight: 200;
   font-size: 3rem !important;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+
+  pointer-events: none;
 }
 
 .page1-content .heading p,
@@ -333,6 +339,10 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   font-weight: 600;
+  /* -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; */
 }
 
 .heading div h3 {
@@ -1213,6 +1223,9 @@ body {
   height: 100vh;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
+  color: white;
+  background: black;
+  scroll-behavior: smooth;
   /* transition: background 0.8s ease-in-out; */
 }
 
@@ -1230,14 +1243,21 @@ body {
 .portfolio-page12 {
   height: 100vh;
   scroll-snap-align: start;
+  scroll-snap-type: proximity;
+  scroll-behavior: smooth;
 }
 
 .p-p1-header {
-  height: 10vh;
+  height: fit-content;
   display: flex;
   align-items: center;
   width: 95%;
   justify-content: flex-end;
+}
+
+.p-p1-header img {
+  width: 8%;
+  margin-top: 1em;
 }
 
 .p-p1-content {
@@ -1291,6 +1311,7 @@ body {
   animation: image-translate 2s ease-in-out alternate infinite;
   box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
   transform-style: preserve-3d;
+  z-index: 9;
 }
 
 .p-p1-content-right-img img {
@@ -1693,3 +1714,112 @@ body {
     transform: rotate(405deg);
   }
 }
+
+/* loader */
+/* #mainpage {
+  display: none;
+} */
+
+/* .loader #loader {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  background: #1a1a1a;
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader path {
+  stroke-linecap: round;
+  stroke-width: 10;
+  stroke-linejoin: "round";
+}
+
+.loader #left-half {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 999;
+  animation: animate-right-half 2s ease-in;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+.loader #right-half {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 999;
+  animation: animate-right-half 2s ease-in;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animate-right-half {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.loader svg {
+  animation: shrink 1s ease-in-out;
+  animation-delay: 2.2s;
+  animation-fill-mode: forwards;
+  width: 100px;
+}
+
+@keyframes shrink {
+  to {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+.loader #loader {
+  animation: disappear 2s ease-in-out;
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes disappear {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.loader #content {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  background-size: cover;
+  animation: zoom-in 1.5s;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  transform: scale(0.8);
+}
+
+@keyframes zoom-in {
+  to {
+    transform: scale(1);
+  }
+}
+
+.loader #content h1 {
+  font-family: "Poppins", sans-serif;
+  transition: all 400ms ease-in-out;
+  color: #1a1a1a;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 900;
+  font-size: 60px;
+} */
