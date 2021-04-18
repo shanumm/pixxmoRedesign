@@ -4,36 +4,29 @@ import { Link } from "react-router-dom";
 import Footer from "./Footer";
 import anime from "animejs";
 import Teamimage from "./teamimage.webp";
-import img1 from "./Images/drive-download-20210418T131226Z-001/one.jpg";
-import img2 from "./Images/drive-download-20210418T131226Z-001/one2.jpeg";
-import img3 from "./Images/drive-download-20210418T131226Z-001/one3.jpg";
-import img4 from "./Images/drive-download-20210418T131226Z-001/one4.jpg";
-import img5 from "./Images/drive-download-20210418T131226Z-001/one5.jpg";
-import img6 from "./Images/drive-download-20210418T131226Z-001/one6.jpg";
-import img7 from "./Images/drive-download-20210418T131226Z-001/one7.jpeg";
-import img8 from "./Images/drive-download-20210418T131226Z-001/one8.jpeg";
-import img9 from "./Images/drive-download-20210418T131226Z-001/one9.jpeg";
-import img10 from "./Images/drive-download-20210418T131226Z-001/one10.jpg";
-import img11 from "./Images/drive-download-20210418T131226Z-001/one11.jpg";
-import img12 from "./Images/drive-download-20210418T131226Z-001/one12.jpg";
-import img13 from "./Images/drive-download-20210418T131226Z-001/one13.jpg";
-import img14 from "./Images/drive-download-20210418T131226Z-001/one14.jpg";
-import img15 from "./Images/drive-download-20210418T131226Z-001/one15.HEIC";
-import img16 from "./Images/drive-download-20210418T131226Z-001/one16.jpg";
-import img17 from "./Images/drive-download-20210418T131226Z-001/one17.jpg";
-import img18 from "./Images/drive-download-20210418T131226Z-001/one18.jpg";
-import img19 from "./Images/drive-download-20210418T131226Z-001/one19.jpg";
-import img20 from "./Images/drive-download-20210418T131226Z-001/one20.jpg";
-import img21 from "./Images/drive-download-20210418T131226Z-001/one21.jpg";
-import img22 from "./Images/drive-download-20210418T131226Z-001/one22.jpg";
-import img23 from "./Images/drive-download-20210418T131226Z-001/one23.jpg";
-import img24 from "./Images/drive-download-20210418T131226Z-001/one24.jpg";
+import img1 from "./Images/drive-download-20210418T131226Z-001/one.png";
+import img2 from "./Images/drive-download-20210418T131226Z-001/one2.png";
+import img5 from "./Images/drive-download-20210418T131226Z-001/one6.png";
+import img7 from "./Images/drive-download-20210418T131226Z-001/one7.png";
+import img9 from "./Images/drive-download-20210418T131226Z-001/one9.png";
+import img10 from "./Images/drive-download-20210418T131226Z-001/one10.png";
+import img11 from "./Images/drive-download-20210418T131226Z-001/one11.png";
+import img12 from "./Images/drive-download-20210418T131226Z-001/one12.png";
+import img13 from "./Images/drive-download-20210418T131226Z-001/one13.png";
+import img14 from "./Images/drive-download-20210418T131226Z-001/one14.png";
+import img16 from "./Images/drive-download-20210418T131226Z-001/one16.png";
+import img18 from "./Images/drive-download-20210418T131226Z-001/one18.png";
+import img19 from "./Images/drive-download-20210418T131226Z-001/one19.png";
+import img20 from "./Images/drive-download-20210418T131226Z-001/one20.png";
+import img21 from "./Images/drive-download-20210418T131226Z-001/one21.png";
+import img22 from "./Images/drive-download-20210418T131226Z-001/one22.png";
+import img23 from "./Images/drive-download-20210418T131226Z-001/one23.png";
+import img24 from "./Images/drive-download-20210418T131226Z-001/one24.png";
 import img25 from "./Images/drive-download-20210418T131226Z-001/one25.png";
-import img26 from "./Images/drive-download-20210418T131226Z-001/one26.jpg";
-import img27 from "./Images/drive-download-20210418T131226Z-001/one27.jpeg";
-import img28 from "./Images/drive-download-20210418T131226Z-001/krishya.jpeg";
-import img29 from "./Images/drive-download-20210418T131226Z-001/pratham.JPG";
-import img30 from "./Images/drive-download-20210418T131226Z-001/vatsal.jpg";
+import img27 from "./Images/drive-download-20210418T131226Z-001/one27.png";
+import img28 from "./Images/drive-download-20210418T131226Z-001/krishya.png";
+import img29 from "./Images/drive-download-20210418T131226Z-001/pratham.png";
+import img30 from "./Images/drive-download-20210418T131226Z-001/vatsal.png";
 import { AnimatePresence, motion } from "framer-motion";
 
 import "./App.css";
@@ -79,6 +72,31 @@ export default function Team() {
           </p>
         </div>
         <div className="team-about-lower">
+          <div className="team-about12">
+            <div className="team-about12-image">
+              <img src={img24} />
+            </div>
+            <div className="team-about12-text">
+              <h1>Paramjot Singh</h1>
+              <h2>CDO</h2>
+              <p>
+                - Building an ever-lasting communication is a never-ending
+                process.{" "}
+              </p>
+            </div>
+          </div>
+          <div className="team-about12">
+            <div className="team-about12-image">
+              <img src={img7} />
+            </div>
+            <div className="team-about12-text">
+              <h1>Aditi Tripathi</h1>
+              <h2>Content Head</h2>
+              <p>
+                - Words are mere allies, it's the thought that needs attention.
+              </p>
+            </div>
+          </div>
           <div className="team-about1">
             <div className="team-about1-image">
               <img src={img10} />
@@ -130,16 +148,6 @@ export default function Team() {
                 - Almost all good literature begins with hideous first efforts.
                 You have to start somewhere.
               </p>
-            </div>
-          </div>
-          <div className="team-about7">
-            <div className="team-about7-image">
-              <img src={img3} />
-            </div>
-            <div className="team-about7-text">
-              <h1>Lucky Sharma</h1>
-              <h2>graphic designer</h2>
-              <p>- Communicating ideas through my design.</p>
             </div>
           </div>
           <div className="team-about9">
@@ -235,31 +243,6 @@ export default function Team() {
               <p>
                 - "Marketing is no longer about the stuff you make, but the
                 stories you tell."
-              </p>
-            </div>
-          </div>
-          <div className="team-about12">
-            <div className="team-about12-image">
-              <img src={img24} />
-            </div>
-            <div className="team-about12-text">
-              <h1>Paramjot Singh</h1>
-              <h2>CDO</h2>
-              <p>
-                - Building an ever-lasting communication is a never-ending
-                process.{" "}
-              </p>
-            </div>
-          </div>
-          <div className="team-about12">
-            <div className="team-about12-image">
-              <img src={img7} />
-            </div>
-            <div className="team-about12-text">
-              <h1>Aditi Tripathi</h1>
-              <h2>Content Head</h2>
-              <p>
-                - Words are mere allies, it's the thought that needs attention.
               </p>
             </div>
           </div>

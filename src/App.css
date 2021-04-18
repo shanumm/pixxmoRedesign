@@ -578,10 +578,12 @@ body {
   width: 80%;
   height: 100%;
   margin: auto;
-  background: url("https://cdn.pixabay.com/photo/2021/02/22/08/41/crocus-6039312_960_720.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+}
+
+.client-image-img img {
+  width: 50%;
+  margin-top: 5%;
+  margin-left: 25%;
 }
 
 .client-info-content {
