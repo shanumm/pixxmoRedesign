@@ -33,25 +33,36 @@ export default function Contact() {
         <FormSub />
         <div className="contact-text3">
           <div className="contact-text3-info">
-            <h3>Lorem ipsum dolor sit amet.</h3>
-            <h4>Lorem, ipsum dolor.</h4>
-            <h5>lorem</h5>
+            <h4>Address</h4>
+            <h5>
+              <a href="https://g.page/pixXmo?share" target="_blank">
+                977, Sector-1, Rohtak, Haryana-124001
+              </a>
+            </h5>
+          </div>
+          <div className="contact-text3-info">
+            <h4>E-Mail ID</h4>
+            <h5>
+              <a href="mailto:contact@pixxmo.com">contact@pixxmo.com</a>
+            </h5>
           </div>
           <div className="contact-text3-phone">
-            <h5>Lorem, ipsum.</h5>
-            <h6>123456789</h6>
+            <h4>Phone Number</h4>
+            <h5>
+              <a href="tel:+91-8318674272">+91-8318674272</a>/
+              <a href="tel:+91-9996888764">+91-9996888764</a>
+            </h5>
           </div>
         </div>
-        {/* <div className="map">
+        <div className="contact-map">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1073.5143972670537!2d76.6291030126676!3d28.88436118231899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d8583791d7655%3A0x2e4711615033c19b!2spixXmo%20Online%20Services%20Private%20Limited!5e1!3m2!1sen!2sin!4v1618731440252!5m2!1sen!2sin"
-            width="100%"
-            height="720"
-            style={{ border: 0 }}
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13973.882321368468!2d76.6293766!3d28.8843612!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2e4711615033c19b!2spixXmo%20Online%20Services%20Private%20Limited!5e0!3m2!1sen!2sin!4v1618757952706!5m2!1sen!2sin"
+            width="90%"
+            height="780"
             allowfullscreen=""
             loading="lazy"
           ></iframe>
-        </div> */}
+        </div>
       </div>
       <Footer />
     </motion.div>

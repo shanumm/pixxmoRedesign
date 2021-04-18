@@ -103,10 +103,10 @@ export default function Sphere() {
   });
   return (
     <>
-      <div class="body2 animation-wrapper">
-        <div class="sphere-animation">
+      <div className="body2 animation-wrapper">
+        <div className="sphere-animation">
           <svg
-            class="sphere"
+            className="sphere"
             viewBox="0 0 440 440"
             stroke="rgba(80,80,80,0.35)"
           >

@@ -124,7 +124,6 @@ export default function Service() {
           </div>
           <div className="third5">
             <h2>Application Development (Android/iOS)</h2>
-
             <ul>
               <li>
                 <i>Agility over informatory!</i>

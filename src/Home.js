@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "./App.css";
 import Pixxmo from "./TBG.png";
 import PixxmoW from "./TBGW.png";
+import Preloader from "./Preloader";
 // import Audio from "./soft.mp3";
 import { Link, Redirect, useHistory } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
@@ -301,7 +302,6 @@ export default function Home() {
       container.style.height = "90vh";
     });
 
-    // loader
     // setTimeout(hide, 5000);
     // function hide() {
     //   loader.style.display = "none";

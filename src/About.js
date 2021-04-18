@@ -47,29 +47,70 @@ export default function About() {
           </p>
         </div>
         <div className="founders">
-          <div className="team-about1">
-            <div className="team-about1-image">
-              <img src={Nishant} />
+          <div className="nishant">
+            <div className="nishant-img-quote">
+              <div>
+                <img src={Nishant} alt="" />
+              </div>
+              <span className="quote">
+                "<br />{" "}
+                <i className="quoteOfNishant">
+                  {" "}
+                  pixXmo is not just a brand…it’s a manifestation of our vision{" "}
+                </i>
+                <br /> <span> " </span>
+              </span>
             </div>
-            <div className="team-about1-text">
-              <h1>Nishant Tiwari</h1>
-              <h2>Founder and CEO</h2>
-              <p></p>
+            <br />
+            <br />
+            <div>
+              Welcome to pixXmo. <br /> The thought that “every pixel has a
+              moment” made me express my passion through a digital medium. What
+              began as a medium of expression, gradually saw a transformation,
+              when I met like-minded people whom I call my family now. The
+              journey of one became the journey of many and the collective
+              strength brought us here. I am forever grateful to all my team
+              members for standing with me in this beautiful never-ending
+              journey. We are committed to our art and strive to put our
+              creative forces into our work. I cannot express enough gratitude
+              to my parents who are and will always be a constant source of
+              strength in all my endeavors. <br /> <br /> NISHANT TIWARI <br />{" "}
+              Founder
             </div>
           </div>
-          <div className="team-about2">
-            <div className="team-about2-image">
-              <img src={Nitesh} />
+          <div className="nitesh">
+            <div className="nitesh-img-quote">
+              <div>
+                <img src={Nitesh} alt="" />
+              </div>
+              <span className="quote">
+                "<br />{" "}
+                <i className="quoteOfNitesh">
+                  {" "}
+                  At PixXmo, your pixel will have its best moment.
+                </i>
+                <br /> <span className="second-quote"> " </span>
+              </span>
             </div>
-            <div className="team-about2-text">
-              <h1>Nitesh Nagpal</h1>
-              <h2>Co-Founder and CTO</h2>
-              <p></p>
+            <br />
+            <br />
+            <div>
+              Welcome to pixXmo. <br /> It is our belief in a seamless
+              connection between strategy and creativity, which makes pixXmo
+              offer you a service of ultimate satisfaction and brilliance. It
+              has been a collective effort of one and all which has brought us
+              here together and keeps us dignified as a brand. We deal with
+              clients and projects on such a varied scale that it makes this
+              experience all the more interesting and keeps us going and doing
+              better. We live in an ever transitioning world, where every day is
+              a different one. To be on the same wavelength as the change is a
+              must to survive. And so we as a collective force ensure growth in
+              every way possible. <br /> <br /> Nitesh Nagpal <br /> CTO
             </div>
           </div>
         </div>
       </div>
-      <Sphere />
+      <Sphere className="sphereee" />
     </>
   );
 }
