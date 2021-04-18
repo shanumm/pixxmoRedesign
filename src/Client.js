@@ -26,6 +26,7 @@ import Logo18 from "./LOGO/logo18.png";
 import { AnimatePresence, motion } from "framer-motion";
 import "./App.css";
 import Hole from "./Hole";
+import { noConflict } from "jquery";
 
 export default function Client() {
   useEffect(() => {
@@ -67,19 +68,9 @@ export default function Client() {
               </div>
             </div>
             <div className="client-info-content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-              consequuntur nulla eveniet, perferendis dolores necessitatibus.
-            </div>
-          </div>
-          <div>
-            <div className="client-image">
-              <div className="client-image-img">
+              <div className="client-image-img bril">
                 <img src={Logo2} />
               </div>
-            </div>
-            <div className="client-info-content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-              consequuntur nulla eveniet, perferendis dolores necessitatibus.
             </div>
           </div>
           <div>
@@ -89,19 +80,9 @@ export default function Client() {
               </div>
             </div>
             <div className="client-info-content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-              consequuntur nulla eveniet, perferendis dolores necessitatibus.
-            </div>
-          </div>
-          <div>
-            <div className="client-image">
               <div className="client-image-img">
                 <img src={Logo4} />
               </div>
-            </div>
-            <div className="client-info-content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-              consequuntur nulla eveniet, perferendis dolores necessitatibus.
             </div>
           </div>
           <div>
@@ -111,19 +92,9 @@ export default function Client() {
               </div>
             </div>
             <div className="client-info-content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-              consequuntur nulla eveniet, perferendis dolores necessitatibus.
-            </div>
-          </div>
-          <div>
-            <div className="client-image">
               <div className="client-image-img">
-                <img src={Logo6} />
+                <img src={Logo11} />
               </div>
-            </div>
-            <div className="client-info-content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-              consequuntur nulla eveniet, perferendis dolores necessitatibus.
             </div>
           </div>
           <div>
@@ -133,63 +104,33 @@ export default function Client() {
               </div>
             </div>
             <div className="client-info-content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-              consequuntur nulla eveniet, perferendis dolores necessitatibus.
-            </div>
-          </div>
-          <div>
-            <div className="client-image">
               <div className="client-image-img">
                 <img src={Logo8} />
               </div>
             </div>
-            <div className="client-info-content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-              consequuntur nulla eveniet, perferendis dolores necessitatibus.
-            </div>
           </div>
           <div>
             <div className="client-image">
-              <div className="client-image-img">
+              <div className="client-image-img le">
                 <img src={Logo9} />
               </div>
             </div>
             <div className="client-info-content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-              consequuntur nulla eveniet, perferendis dolores necessitatibus.
-            </div>
-          </div>
-          <div>
-            <div className="client-image">
               <div className="client-image-img">
                 <img src={Logo10} />
               </div>
             </div>
-            <div className="client-info-content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-              consequuntur nulla eveniet, perferendis dolores necessitatibus.
-            </div>
           </div>
           <div>
             <div className="client-image">
-              <div className="client-image-img">
-                <img src={Logo11} />
+              <div className="client-image-img old">
+                <img src={Logo6} />
               </div>
             </div>
             <div className="client-info-content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-              consequuntur nulla eveniet, perferendis dolores necessitatibus.
-            </div>
-          </div>
-          <div>
-            <div className="client-image">
               <div className="client-image-img">
                 <img src={Logo12} />
               </div>
-            </div>
-            <div className="client-info-content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-              consequuntur nulla eveniet, perferendis dolores necessitatibus.
             </div>
           </div>
           <div>
@@ -198,20 +139,10 @@ export default function Client() {
                 <img src={Logo13} />
               </div>
             </div>
-            <div className="client-info-content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-              consequuntur nulla eveniet, perferendis dolores necessitatibus.
-            </div>
-          </div>
-          <div>
-            <div className="client-image">
+            <div className="client-info-content pak">
               <div className="client-image-img">
                 <img src={Logo14} />
               </div>
-            </div>
-            <div className="client-info-content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-              consequuntur nulla eveniet, perferendis dolores necessitatibus.
             </div>
           </div>
           <div>
@@ -221,41 +152,24 @@ export default function Client() {
               </div>
             </div>
             <div className="client-info-content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-              consequuntur nulla eveniet, perferendis dolores necessitatibus.
-            </div>
-          </div>
-          <div>
-            <div className="client-image">
-              <div className="client-image-img">
-                <img src={Logo16} />
+              <div className="client-image-img hans">
+                <img src={Logo17} />
               </div>
             </div>
-            <div className="client-info-content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-              consequuntur nulla eveniet, perferendis dolores necessitatibus.
-            </div>
           </div>
           <div>
             <div className="client-image">
-              <div className="client-image-img">
+              <div
+                className="client-image-img"
+                style={{ visibility: "hidden" }}
+              >
                 <img src={Logo17} />
               </div>
             </div>
             <div className="client-info-content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-              consequuntur nulla eveniet, perferendis dolores necessitatibus.
-            </div>
-          </div>
-          <div>
-            <div className="client-image">
               <div className="client-image-img">
                 <img src={Logo18} />
               </div>
-            </div>
-            <div className="client-info-content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-              consequuntur nulla eveniet, perferendis dolores necessitatibus.
             </div>
           </div>
         </div>

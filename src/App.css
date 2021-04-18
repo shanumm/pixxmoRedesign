@@ -582,7 +582,6 @@ body {
 
 .client-image-img img {
   width: 50%;
-  margin-top: 5%;
   margin-left: 25%;
 }
 
@@ -593,8 +592,22 @@ body {
 
 .client-landing-clientsInfo > div:nth-of-type(2n + 1) .client-image {
   order: 1;
+  margin-top: 2%;
 }
 
+.old {
+  margin-top: -50px;
+}
+.pak,
+.bril {
+  margin-top: 50px;
+}
+.hans {
+  margin-top: 70px;
+}
+.le {
+  margin-top: -70px;
+}
 /* about  */
 
 .about {
