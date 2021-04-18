@@ -42,6 +42,16 @@ export default function Contact() {
             <h6>123456789</h6>
           </div>
         </div>
+        {/* <div className="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1073.5143972670537!2d76.6291030126676!3d28.88436118231899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d8583791d7655%3A0x2e4711615033c19b!2spixXmo%20Online%20Services%20Private%20Limited!5e1!3m2!1sen!2sin!4v1618731440252!5m2!1sen!2sin"
+            width="100%"
+            height="720"
+            style={{ border: 0 }}
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div> */}
       </div>
       <Footer />
     </motion.div>

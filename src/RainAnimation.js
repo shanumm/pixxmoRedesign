@@ -83,7 +83,7 @@ export default function RainAnimation() {
     makeItRain();
   });
   return (
-    <div class="body1 back-row-toggle splat-toggle">
+    <div className="body1">
       <div class="rain front-row"></div>
       <div class="rain back-row"></div>
     </div>

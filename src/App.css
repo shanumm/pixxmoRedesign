@@ -632,7 +632,7 @@ body {
 
 .services-main,
 .service-content {
-  min-height: 280vh;
+  min-height: 210vh;
   width: 100%;
   background: black;
   text-align: justify;
@@ -691,35 +691,10 @@ body {
   margin-bottom: 1rem;
   text-align: center;
 }
-.text-fourth {
-  min-height: 50vh;
-}
-.text-fourth p {
-  font-size: 2.3rem;
-  margin-left: 2.5rem;
-  width: 40%;
-  margin-top: 6rem;
-  margin-bottom: 1.7rem;
-}
-.text-fourth button {
-  margin-left: 4rem;
-  padding: 1rem 2rem;
-  border-radius: 2rem;
-  border-color: white;
-  background: rgb(14, 13, 13);
-  font-size: 1.2rem;
-  color: white;
-  transition: all 0.5s ease-in-out;
-  outline: none;
-}
-.text-fourth button:hover {
-  color: black;
-  background: white;
-}
 
 /* footer  */
 .Footer {
-  height: 10vh;
+  height: fit-content;
   background: rgb(40, 41, 43);
   display: flex;
   align-items: center;
@@ -727,7 +702,18 @@ body {
   bottom: 0%;
   left: 0%;
   transform: translate(0%, 0%);
+  padding-top: 1.5em;
+  padding-bottom: 1em;
 }
+
+.Footer a,
+.Footer a:hover,
+.Footer a:visited,
+.Footer a:link {
+  color: white;
+  text-decoration: none;
+}
+
 .Footer-text1,
 .Footer-text3 {
   flex: 1;
@@ -745,7 +731,7 @@ body {
 /* contact  */
 
 .contact {
-  min-height: 95%;
+  min-height: 100%;
   width: 100%;
 }
 .contact-text1 {
@@ -820,6 +806,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin: auto;
+  background-color: rosybrown;
 }
 .contact-text3-info {
   font-size: 1.1rem;
@@ -880,7 +867,7 @@ body {
   /* grid-template-columns: 1fr 1fr 1fr; */
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 4rem;
-  margin-bottom: 17.9em;
+  margin-bottom: 8.2em;
 }
 
 @media (max-width: 900px) {
@@ -1246,8 +1233,6 @@ body {
 .portfolio-page12 {
   height: 100vh;
   scroll-snap-align: start;
-  scroll-snap-type: proximity;
-  scroll-behavior: smooth;
 }
 
 .p-p1-header {

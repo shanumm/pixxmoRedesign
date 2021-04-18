@@ -106,7 +106,7 @@ export default function Portfolio() {
           </div>
           <div className="p-p1-content">
             <div className="p-p1-content-left">
-              <h1>Lorem</h1>
+              <h1>WEIHZ STAY</h1>
               <h3>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
                 exercitationem in doloribus quibusdam, atque accusamus!
@@ -126,7 +126,7 @@ export default function Portfolio() {
           </div>
           <div className="p-p1-content">
             <div className="p-p1-content-left">
-              <h1>Lorem</h1>
+              <h1>HansConcepts India</h1>
               <h3>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
                 exercitationem in doloribus quibusdam, atque accusamus!
@@ -206,7 +206,7 @@ export default function Portfolio() {
           </div>
           <div className="p-p1-content">
             <div className="p-p1-content-left">
-              <h1>Lorem</h1>
+              <h1>IndoBaijin Chemicals Private Limited</h1>
               <h3>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
                 exercitationem in doloribus quibusdam, atque accusamus!
@@ -226,7 +226,7 @@ export default function Portfolio() {
           </div>
           <div className="p-p1-content">
             <div className="p-p1-content-left">
-              <h1>Lorem</h1>
+              <h1>The Pure Earth</h1>
               <h3>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
                 exercitationem in doloribus quibusdam, atque accusamus!
