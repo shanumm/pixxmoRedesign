@@ -1918,6 +1918,7 @@ body {
 .nitesh-img-quote .quote {
   flex: 1 1 10rem;
   padding-top: 2rem;
+  margin-left: -55%;
 }
 
 /* Mobile View */

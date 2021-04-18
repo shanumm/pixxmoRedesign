@@ -27,6 +27,8 @@ import img27 from "./Images/drive-download-20210418T131226Z-001/one27.png";
 import img28 from "./Images/drive-download-20210418T131226Z-001/krishya.png";
 import img29 from "./Images/drive-download-20210418T131226Z-001/pratham.png";
 import img30 from "./Images/drive-download-20210418T131226Z-001/vatsal.png";
+import img31 from "./Images/drive-download-20210418T131226Z-001/one28.png";
+
 import { AnimatePresence, motion } from "framer-motion";
 
 import "./App.css";
@@ -113,6 +115,16 @@ export default function Team() {
             </div>
             <div className="team-about2-text">
               <h1>Pushkar Mishra</h1>
+              <h2>Web developer</h2>
+              <p>- My mantra: Eat, Sleep, Code, Repeat.</p>
+            </div>
+          </div>
+          <div className="team-about2">
+            <div className="team-about2-image">
+              <img src={img31} />
+            </div>
+            <div className="team-about2-text">
+              <h1>Jagmohan Singh</h1>
               <h2>Web developer</h2>
               <p>- My mantra: Eat, Sleep, Code, Repeat.</p>
             </div>
