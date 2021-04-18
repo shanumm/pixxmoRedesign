@@ -88,7 +88,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  clip-path: circle(8% at var(--x) var(--y));
+  clip-path: circle(10% at var(--x) var(--y));
   background: url("../src/Images/mars_surface.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -1918,4 +1918,75 @@ body {
 .nitesh-img-quote .quote {
   flex: 1 1 10rem;
   padding-top: 2rem;
+}
+
+/* Mobile View */
+
+@media screen and (max-width: 768px) {
+  .custom-pointer {
+    display: none;
+  }
+  .page1-content .heading div h3 {
+    font-size: 2em !important;
+    letter-spacing: 0;
+    margin-left: -0.3em;
+    line-height: 2em;
+    width: 100%;
+  }
+
+  .page2 .text h3,
+  .page3 .text h3,
+  .page4 .text h3,
+  .page5 .text h3,
+  .page6 .text h3,
+  .page7 .text h3 {
+    font-size: 2em !important;
+    letter-spacing: 0;
+    margin-left: -0.3em;
+    line-height: 2em;
+    width: 80%;
+    text-align: center;
+  }
+  .page-position-nav {
+    right: 5% !important;
+  } /* .team-about1 */
+  .founders img {
+    width: 50% !important;
+    /* border: 1px solid red; */
+  }
+  .service-content::-webkit-scrollbar {
+    display: none;
+  }
+  .services-main,
+  .service-content {
+    min-height: 250vh;
+    width: 100%;
+    background: black;
+    text-align: justify;
+    overflow-x: hidden;
+  }
+  .text-one {
+    font-size: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    margin-right: 0rem;
+    height: 30vh;
+  }
+  .text-two {
+    min-height: 70vh;
+    width: 85%;
+    display: flex;
+    align-items: center;
+    font-size: 1.1em;
+  }
+
+  .text-third {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    margin: auto;
+    grid-gap: 2rem 1rem;
+  }
 }
