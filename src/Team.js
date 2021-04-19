@@ -99,6 +99,16 @@ export default function Team() {
               </p>
             </div>
           </div>
+          <div className="team-about2">
+            <div className="team-about2-image">
+              <img src={img31} />
+            </div>
+            <div className="team-about2-text">
+              <h1>Jagmohan Singh</h1>
+              <h2>Lead Backend Developer</h2>
+              <p>- My mantra: Eat, Sleep, Code, Repeat.</p>
+            </div>
+          </div>
           <div className="team-about1">
             <div className="team-about1-image">
               <img src={img10} />
@@ -255,17 +265,6 @@ export default function Team() {
               <p>- Graphics transcends creativity.</p>
             </div>
           </div>
-          <div className="team-about2">
-            <div className="team-about2-image">
-              <img src={img31} />
-            </div>
-            <div className="team-about2-text">
-              <h1>Jagmohan Singh</h1>
-              <h2>Lead Backend Developer</h2>
-              <p>- My mantra: Eat, Sleep, Code, Repeat.</p>
-            </div>
-          </div>
-
           <div className="team-about6">
             <div className="team-about6-image">
               <img src={img28} />
@@ -286,7 +285,7 @@ export default function Team() {
             </div>
             <div className="team-about12-text">
               <h1>Saanya Aroura</h1>
-              <h2>Content Writing</h2>
+              <h2>Content Writer</h2>
               <p>- Hues of the World through Hues of the Words.</p>
             </div>
           </div>
