@@ -44,7 +44,7 @@ path {
 
 svg {
   animation: shrink 1s ease-in-out;
-  animation-delay: 2.2s;
+  animation-delay: 2s;
   animation-fill-mode: forwards;
   width: 100px;
 }
@@ -58,7 +58,7 @@ svg {
 
 #loader {
   animation: disappear 2s ease-in-out;
-  animation-delay: 2.5s;
+  animation-delay: 2s;
   animation-fill-mode: forwards;
 }
 
@@ -84,7 +84,7 @@ svg {
   animation: zoom-in 1.5s;
   background-position: center;
   background-repeat: no-repeat;
-  animation-delay: 2s;
+  animation-delay: 1s;
   animation-fill-mode: forwards;
   transform: scale(0.8);
 }
@@ -124,15 +124,11 @@ svg {
   transform: translateY(100%);
   background: rgb(8, 8, 8);
   z-index: 10000000000000000;
-  animation: try 4s ease-in-out 6s forwards;
+  animation: try 2s ease-in-out 4s forwards;
 }
 
-
-
-
-@media(max-width:700px)
-{
-  #content h1{
+@media (max-width: 700px) {
+  #content h1 {
     font-size: 2rem;
   }
 }

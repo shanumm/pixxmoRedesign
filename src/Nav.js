@@ -31,7 +31,7 @@ export default function Nav() {
         <div>
           <Link to="/services">
             <div className="positional">
-              <p>service</p>
+              <p>our services</p>
             </div>
           </Link>
         </div>
@@ -43,16 +43,16 @@ export default function Nav() {
           </Link>
         </div>
         <div>
-          <Link to="/team">
+          <Link to="/clients">
             <div className="positional">
-              <p>team</p>
+              <p>client</p>
             </div>
           </Link>
         </div>
         <div>
-          <Link to="/clients">
+          <Link to="/team">
             <div className="positional">
-              <p>client</p>
+              <p>our team</p>
             </div>
           </Link>
         </div>

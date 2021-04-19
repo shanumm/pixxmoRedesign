@@ -192,7 +192,7 @@ export default function Home() {
       end = new Date();
       timer = end - start;
       if (timer > 300) {
-        History.push("/team");
+        History.push("/clients");
       }
     });
     page5.addEventListener("mousedown", () => {
@@ -202,7 +202,7 @@ export default function Home() {
       end = new Date();
       timer = end - start;
       if (timer > 300) {
-        History.push("/clients");
+        History.push("/team");
       }
     });
     page6.addEventListener("mousedown", () => {
@@ -429,7 +429,7 @@ export default function Home() {
             {/* <Blob name="3" /> */}
             <div className="text">
               {" "}
-              <h3>You must take your chance</h3>
+              <h3>What is past is prologue</h3>
               <p>Portfolio</p>
             </div>
             <Nav />
@@ -441,8 +441,8 @@ export default function Home() {
             {/* <Blob name="4" /> */}
             <div className="text">
               {" "}
-              <h3>What is past is prologue</h3>
-              <p>Our Team</p>
+              <h3>You must take your chance</h3>
+              <p>Our Clients</p>
             </div>
             <Nav />
           </div>
@@ -454,7 +454,7 @@ export default function Home() {
             <div className="text">
               {" "}
               <h3>How many goodly creatures are there here!</h3>
-              <p>Our Clients</p>
+              <p>Our Team</p>
             </div>
             <Nav />
           </div>
