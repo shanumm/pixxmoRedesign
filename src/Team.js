@@ -119,16 +119,6 @@ export default function Team() {
               <p>- My mantra: Eat, Sleep, Code, Repeat.</p>
             </div>
           </div>
-          <div className="team-about2">
-            <div className="team-about2-image">
-              <img src={img31} />
-            </div>
-            <div className="team-about2-text">
-              <h1>Jagmohan Singh</h1>
-              <h2>Web developer</h2>
-              <p>- My mantra: Eat, Sleep, Code, Repeat.</p>
-            </div>
-          </div>
           <div className="team-about3">
             <div className="team-about3-image">
               <img src={img22} />
@@ -149,49 +139,6 @@ export default function Team() {
               <p>- It is much more than what you see on the screen.</p>
             </div>
           </div>
-          <div className="team-about6">
-            <div className="team-about6-image">
-              <img src={img28} />
-            </div>
-            <div className="team-about6-text">
-              <h1>Krishya Gaba</h1>
-              <h2>content writer</h2>
-              <p>
-                - Almost all good literature begins with hideous first efforts.
-                You have to start somewhere.
-              </p>
-            </div>
-          </div>
-          <div className="team-about9">
-            <div className="team-about9-image">
-              <img src={img25} />
-            </div>
-            <div className="team-about9-text">
-              <h1>Pranav Prakasan</h1>
-              <h2>graphic designer</h2>
-              <p>- Consider success to be atleast one possible outcome!</p>
-            </div>
-          </div>
-          <div className="team-about10">
-            <div className="team-about10-image">
-              <img src={img29} />
-            </div>
-            <div className="team-about10-text">
-              <h1>Pratham Shah</h1>
-              <h2>graphic designer</h2>
-              <p>- Just someone trying not to be just someone</p>
-            </div>
-          </div>
-          <div className="team-about12">
-            <div className="team-about12-image">
-              <img src={img5} />
-            </div>
-            <div className="team-about12-text">
-              <h1>Saanya Aroura</h1>
-              <h2>Content Writing</h2>
-              <p>- Hues of the World through Hues of the Words.</p>
-            </div>
-          </div>
           <div className="team-about12">
             <div className="team-about12-image">
               <img src={img2} />
@@ -203,69 +150,6 @@ export default function Team() {
                 - You and I see it differently. It's an on-screen/off-screen
                 relation.
               </p>
-            </div>
-          </div>
-          <div className="team-about12">
-            <div className="team-about12-image">
-              <img src={img27} />
-            </div>
-            <div className="team-about12-text">
-              <h1>Shashwat Gupta</h1>
-              <h2>graphic designer</h2>
-              <p>- We create, design, devise, express and set trends. </p>
-            </div>
-          </div>
-          <div className="team-about12">
-            <div className="team-about12-image">
-              <img src={img11} />
-            </div>
-            <div className="team-about12-text">
-              <h1>Shruti Agrawal</h1>
-              <h2>web developer</h2>
-              <p>- A bug is just an unpublished feature! </p>
-            </div>
-          </div>
-          <div className="team-about12">
-            <div className="team-about12-image">
-              <img src={img18} />
-            </div>
-            <div className="team-about12-text">
-              <h1>Srujan Jain</h1>
-              <h2>digital marketing</h2>
-              <p>- Marketing moves matter.</p>
-            </div>
-          </div>
-          <div className="team-about12">
-            <div className="team-about12-image">
-              <img src={img30} />
-            </div>
-            <div className="team-about12-text">
-              <h1>Vatsal Verma</h1>
-              <h2>graphic designer</h2>
-              <p>- Graphics transcends creativity.</p>
-            </div>
-          </div>
-          <div className="team-about12">
-            <div className="team-about12-image">
-              <img src={img1} />
-            </div>
-            <div className="team-about12-text">
-              <h1>Abhishek Singla</h1>
-              <h2>digital marketing</h2>
-              <p>
-                - "Marketing is no longer about the stuff you make, but the
-                stories you tell."
-              </p>
-            </div>
-          </div>
-          <div className="team-about12">
-            <div className="team-about12-image">
-              <img src={img21} />
-            </div>
-            <div className="team-about12-text">
-              <h1>Kritika Jha</h1>
-              <h2>Digital marketing</h2>
-              <p>- If Marketing is fire, Digital Marketing is gasoline.</p>
             </div>
           </div>
           <div className="team-about12">
@@ -288,6 +172,16 @@ export default function Team() {
               <h1>Priyanka Srivastava </h1>
               <h2>web developer</h2>
               <p>- Creating data driven user experience. </p>
+            </div>
+          </div>
+          <div className="team-about12">
+            <div className="team-about12-image">
+              <img src={img11} />
+            </div>
+            <div className="team-about12-text">
+              <h1>Shruti Agrawal</h1>
+              <h2>web developer</h2>
+              <p>- A bug is just an unpublished feature! </p>
             </div>
           </div>
           <div className="team-about12">
@@ -320,6 +214,82 @@ export default function Team() {
               <p>- Talk is cheap. Show me the code.</p>
             </div>
           </div>
+          <div className="team-about9">
+            <div className="team-about9-image">
+              <img src={img25} />
+            </div>
+            <div className="team-about9-text">
+              <h1>Pranav Prakasan</h1>
+              <h2>graphic designer</h2>
+              <p>- Consider success to be atleast one possible outcome!</p>
+            </div>
+          </div>
+          <div className="team-about10">
+            <div className="team-about10-image">
+              <img src={img29} />
+            </div>
+            <div className="team-about10-text">
+              <h1>Pratham Shah</h1>
+              <h2>graphic designer</h2>
+              <p>- Just someone trying not to be just someone</p>
+            </div>
+          </div>
+
+          <div className="team-about12">
+            <div className="team-about12-image">
+              <img src={img27} />
+            </div>
+            <div className="team-about12-text">
+              <h1>Shashwat Gupta</h1>
+              <h2>graphic designer</h2>
+              <p>- We create, design, devise, express and set trends. </p>
+            </div>
+          </div>
+          <div className="team-about12">
+            <div className="team-about12-image">
+              <img src={img30} />
+            </div>
+            <div className="team-about12-text">
+              <h1>Vatsal Verma</h1>
+              <h2>graphic designer</h2>
+              <p>- Graphics transcends creativity.</p>
+            </div>
+          </div>
+          <div className="team-about2">
+            <div className="team-about2-image">
+              <img src={img31} />
+            </div>
+            <div className="team-about2-text">
+              <h1>Jagmohan Singh</h1>
+              <h2>Lead Backend Developer</h2>
+              <p>- My mantra: Eat, Sleep, Code, Repeat.</p>
+            </div>
+          </div>
+
+          <div className="team-about6">
+            <div className="team-about6-image">
+              <img src={img28} />
+            </div>
+            <div className="team-about6-text">
+              <h1>Krishya Gaba</h1>
+              <h2>content writer</h2>
+              <p>
+                - Almost all good literature begins with hideous first efforts.
+                You have to start somewhere.
+              </p>
+            </div>
+          </div>
+
+          <div className="team-about12">
+            <div className="team-about12-image">
+              <img src={img5} />
+            </div>
+            <div className="team-about12-text">
+              <h1>Saanya Aroura</h1>
+              <h2>Content Writing</h2>
+              <p>- Hues of the World through Hues of the Words.</p>
+            </div>
+          </div>
           <div className="team-about12">
             <div className="team-about12-image">
               <img src={img9} />
@@ -328,6 +298,40 @@ export default function Team() {
               <h1>Sampoorna Kashyap</h1>
               <h2>content writer</h2>
               <p>- It is just a matter of arranging the alphabets.</p>
+            </div>
+          </div>
+          <div className="team-about12">
+            <div className="team-about12-image">
+              <img src={img18} />
+            </div>
+            <div className="team-about12-text">
+              <h1>Srujan Jain</h1>
+              <h2>digital marketing</h2>
+              <p>- Marketing moves matter.</p>
+            </div>
+          </div>
+
+          <div className="team-about12">
+            <div className="team-about12-image">
+              <img src={img1} />
+            </div>
+            <div className="team-about12-text">
+              <h1>Abhishek Singla</h1>
+              <h2>digital marketing</h2>
+              <p>
+                - "Marketing is no longer about the stuff you make, but the
+                stories you tell."
+              </p>
+            </div>
+          </div>
+          <div className="team-about12">
+            <div className="team-about12-image">
+              <img src={img21} />
+            </div>
+            <div className="team-about12-text">
+              <h1>Kritika Jha</h1>
+              <h2>Digital marketing</h2>
+              <p>- If Marketing is fire, Digital Marketing is gasoline.</p>
             </div>
           </div>
         </div>

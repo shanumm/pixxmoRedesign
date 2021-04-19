@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   BrowserRouter as Router,
   Switch,
@@ -11,10 +11,12 @@ import { AnimatePresence, motion } from "framer-motion";
 import "./App.css";
 
 import Audio from "./soft.mp3";
+import "./preloader.css";
 
 import Home from "./Home";
 import Service from "./Service";
 import Team from "./Team";
+import Preloader from "./Preloader"
 import Career from "./Career";
 import Client from "./Client";
 import Contact from "./Contact";
@@ -22,8 +24,21 @@ import Portfolio from "./Portfolio";
 import Try from "./Try";
 import About from "./About";
 export default function App() {
+  useEffect(() => {
+    // var source = "https://html5music.herokuapp.com/media/no_words.webm";
+    // var audio = new Audio();
+    // // audio.addEventListener("load", () => {
+    // //   audio.play();
+    // // }, true);
+    // audio.source = source;
+    // audio.autoplay = true;
+
+    
+  });
+
   return (
     <>
+      {/* <Preloader/> */}
       <Router>
         <AnimatePresence>
           <Switch>

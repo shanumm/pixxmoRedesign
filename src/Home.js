@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import "./App.css";
 import Pixxmo from "./TBG.png";
 import PixxmoW from "./TBGW.png";
+import "./preloader.css";
+
 import Preloader from "./Preloader";
 // import Audio from "./soft.mp3";
 import { Link, Redirect, useHistory } from "react-router-dom";
@@ -21,6 +23,12 @@ export default function Home() {
     var page5 = document.querySelector(".page5");
     var page6 = document.querySelector(".page6");
     var page7 = document.querySelector(".page7");
+    const body = document.querySelector(".body");
+    var audiomusic = document.querySelector("#my_audio");
+    const proloaderContent = document.querySelector("#content");
+    const loader = document.querySelector(".trying");
+    const nav11 = document.querySelector(".nav11");
+    const overlay = document.querySelector(".overlay");
     var image = document.querySelectorAll(".image .img");
     var heading = document.querySelector(".heading div");
     var landing_text = document.querySelectorAll(".text h3");
@@ -50,7 +58,20 @@ export default function Home() {
         });
       });
     });
+    overlay.addEventListener("animationend", () => {
+      overlay.style.display = "none";
+    });
+    // container.addEventListener("scroll", () => {
+    //   container.scrollTo(0, 0);
+    // });
 
+    var source = "https://html5music.herokuapp.com/media/no_words.webm";
+    var audio = new Audio();
+    // audio.addEventListener("load", () => {
+    //   audio.play();
+    // }, true);
+    audio.source = source;
+    audio.autoplay = true;
     pagePositionNavDiv[0].style.border = "5px solid grey";
     pagePositionNavDiv[0].style.borderRadius = "50%";
     container.addEventListener("scroll", () => {
@@ -225,7 +246,13 @@ export default function Home() {
         });
       });
     }
-
+    body.style.display = "none";
+    setTimeout(() => {
+      body.style.display = "flex";
+      loader.style.display = "none";
+      proloaderContent.style.display = "none";
+    }, 8500);
+    setTimeout(() => {});
     // fixing backgroundAttachment
     if (container) {
       container.addEventListener("scroll", () => {
@@ -314,7 +341,11 @@ export default function Home() {
       animate={{ opacity: 1 }}
       initial={{ opacity: 0 }}
     >
-      {/* <div className="loader" id="mainloader">
+      {/* <audio className="audio-element">
+        <source src="https://assets.coderrocketfuel.com/pomodoro-times-up.mp3"></source>
+      </audio> */}
+      <div className="overlay"></div>
+      <div className="trying">
         <div id="loader">
           <svg
             width="274"
@@ -343,7 +374,7 @@ export default function Home() {
         <div id="content">
           <h1>Greetings!</h1>
         </div>
-      </div> */}
+      </div>
       <div className="body" id="mainpage">
         <div className="custom-pointer">
           click & <br />
@@ -374,7 +405,10 @@ export default function Home() {
                 </div>
                 <p>About Us</p>
               </div>
-              <Nav />
+              <div className="nav11">
+                {" "}
+                <Nav />
+              </div>
             </div>
           </div>
           <div className="page2">

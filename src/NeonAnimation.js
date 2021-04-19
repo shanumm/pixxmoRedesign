@@ -4,7 +4,7 @@ import "./StyleSass/NeonAnimation.css";
 export default function NeonAnimation() {
   useEffect(() => {
     var c = document.getElementById("c"),
-      w = (c.width = window.innerWidth),
+      w = (c.width = window.innerWidth/2),
       h = (c.height = window.innerHeight),
       ctx = c.getContext("2d"),
       opts = {
