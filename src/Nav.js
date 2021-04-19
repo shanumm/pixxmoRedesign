@@ -52,7 +52,7 @@ export default function Nav() {
         <div>
           <Link to="/team">
             <div className="positional">
-              <p>our team</p>
+              <p>team</p>
             </div>
           </Link>
         </div>
