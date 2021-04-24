@@ -23,7 +23,7 @@ export default function About() {
   return (
     <>
       <div className="about">
-        <Link to="/home">
+        <Link to="/home1">
           <Cross />
         </Link>{" "}
         <h1>About us</h1>

@@ -29,6 +29,7 @@ export default function Home() {
     const loader = document.querySelector(".trying");
     const nav11 = document.querySelector(".nav11");
     const overlay = document.querySelector(".overlay");
+    const audiobars = document.querySelectorAll(".audiobars");
     var image = document.querySelectorAll(".image .img");
     var heading = document.querySelector(".heading div");
     var landing_text = document.querySelectorAll(".text h3");
@@ -57,6 +58,22 @@ export default function Home() {
           });
         });
       });
+      audiobars.forEach((element) => {
+        element.addEventListener("mouseover", () => {
+          clipImage.forEach((ele) => {
+            ele.style.clipPath = "circle(2% at var(--x)  var(--y))";
+            document.querySelector(".body").style.cursor = "pointer";
+          });
+        });
+      });
+      audiobars.forEach((element) => {
+        element.addEventListener("mouseleave", () => {
+          clipImage.forEach((ele) => {
+            ele.style.clipPath = "circle(8% at var(--x) var(--y))";
+            document.querySelector(".body").style.cursor = "none";
+          });
+        });
+      });
     });
     overlay.addEventListener("animationend", () => {
       overlay.style.display = "none";
@@ -64,14 +81,26 @@ export default function Home() {
     // container.addEventListener("scroll", () => {
     //   container.scrollTo(0, 0);
     // });
+    var audio = document.querySelector("audio");
 
-    var source = "https://html5music.herokuapp.com/media/no_words.webm";
-    var audio = new Audio();
-    // audio.addEventListener("load", () => {
-    //   audio.play();
-    // }, true);
-    audio.source = source;
-    audio.autoplay = true;
+    setTimeout(() => {
+      audio.play();
+      window.addEventListener("load", () => {
+        audio.play();
+      });
+    },5000);
+    var count = 0;
+    audiobars.forEach((element) => {
+      element.addEventListener("click", (e) => {
+        if (count == 0) {
+          count = 1;
+          audio.pause();
+        } else {
+          count = 0;
+          audio.play();
+        }
+      });
+    });
     pagePositionNavDiv[0].style.border = "5px solid grey";
     pagePositionNavDiv[0].style.borderRadius = "50%";
     container.addEventListener("scroll", () => {
@@ -251,7 +280,7 @@ export default function Home() {
       body.style.display = "flex";
       loader.style.display = "none";
       proloaderContent.style.display = "none";
-    }, 8500);
+    }, 5000);
     setTimeout(() => {});
     // fixing backgroundAttachment
     if (container) {
@@ -332,7 +361,7 @@ export default function Home() {
     // setTimeout(hide, 5000);
     // function hide() {
     //   loader.style.display = "none";
-    //   mainpage.style.display = "block";
+    //   // mainpage.style.display = "block";
     // }
   });
   return (
@@ -341,9 +370,6 @@ export default function Home() {
       animate={{ opacity: 1 }}
       initial={{ opacity: 0 }}
     >
-      {/* <audio className="audio-element">
-        <source src="https://assets.coderrocketfuel.com/pomodoro-times-up.mp3"></source>
-      </audio> */}
       <div className="overlay"></div>
       <div className="trying">
         <div id="loader">
@@ -403,12 +429,15 @@ export default function Home() {
                     <span>we call it pixxmo</span>
                   </h3>
                 </div>
-                <p>About Us</p>
+                <Link to="/about">
+                  <p>About us</p>
+                </Link>
               </div>
               <div className="nav11">
                 {" "}
                 <Nav />
               </div>
+              <div className="audiobars"></div>
             </div>
           </div>
           <div className="page2">
@@ -418,9 +447,12 @@ export default function Home() {
             {/* <Blob name="2" /> */}
             <div className="text">
               <h3>Be great in act, as you have been in thought</h3>
-              <p>Our Services</p>
+              <Link to="services">
+                <p>Our Services</p>
+              </Link>
             </div>
             <Nav />
+            <div className="audiobars"></div>
           </div>
           <div className="page3">
             <div className="image2">
@@ -430,9 +462,12 @@ export default function Home() {
             <div className="text">
               {" "}
               <h3>What is past is prologue</h3>
-              <p>Portfolio</p>
+              <Link to="portfolio">
+                <p>Portfolio</p>
+              </Link>
             </div>
             <Nav />
+            <div className="audiobars"></div>
           </div>
           <div className="page4">
             <div className="image3 imgg">
@@ -442,9 +477,12 @@ export default function Home() {
             <div className="text">
               {" "}
               <h3>You must take your chance</h3>
-              <p>Our Clients</p>
+              <Link to="clients">
+                <p>Our Clients</p>
+              </Link>
             </div>
             <Nav />
+            <div className="audiobars"></div>
           </div>
           <div className="page5">
             <div className="image4 imgg">
@@ -454,9 +492,12 @@ export default function Home() {
             <div className="text">
               {" "}
               <h3>How many goodly creatures are there here!</h3>
-              <p>Our Team</p>
+              <Link to="team">
+                <p>Our Team</p>
+              </Link>
             </div>
             <Nav />
+            <div className="audiobars"></div>
           </div>
           <div className="page4 page6">
             <div className="image5 imgg">
@@ -466,9 +507,12 @@ export default function Home() {
             <div className="text">
               {" "}
               <h3>Make haste, the better foot before</h3>
-              <p>Careers</p>
+              <Link to="career">
+                <p>Careers</p>
+              </Link>
             </div>
             <Nav />
+            <div className="audiobars"></div>
           </div>
           <div className="page4 page7">
             <div className="image6 imgg">
@@ -478,9 +522,12 @@ export default function Home() {
             <div className="text">
               {" "}
               <h3>All the world’s a stage</h3>
-              <p>Contact Us</p>
+              <Link to="contact">
+                <p>Contact Us</p>
+              </Link>
             </div>
             <Nav />
+            <div className="audiobars"></div>
           </div>
         </div>
       </div>

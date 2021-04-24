@@ -37,7 +37,7 @@ export default function About() {
       animate={{ opacity: 1 }}
       initial={{ opacity: 0 }}
     >
-      <Link to="/home">
+      <Link to="/home1">
         <Cross />
       </Link>{" "}
       <div className="services-main">

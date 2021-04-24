@@ -8,6 +8,12 @@
   list-style: none;
 }
 
+a{
+  text-decoration: none;
+  color: black;
+  
+}
+
 *::-webkit-scrollbar {
   display: none;
 }
@@ -2100,4 +2106,24 @@ body {
     margin: auto;
     grid-gap: 2rem 1rem;
   } */
+}
+
+
+
+.audiobars{
+  background:url("./sound-bars.svg");
+  height: 30px;
+  position: absolute;
+  width: 60px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  bottom: 2rem;
+  left: 5rem;
+  cursor: pointer;
+
+}
+
+audio{
+  display: none;
 }

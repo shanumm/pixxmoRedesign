@@ -133,7 +133,7 @@ export default function Portfolio() {
       animate={{ opacity: 1 }}
       initial={{ opacity: 0 }}
     >
-      <Link to="/">
+      <Link to="/home1">
         <Cross />
       </Link>
       <div className="portfolio-container">
